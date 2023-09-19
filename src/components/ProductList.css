@@ -1,0 +1,144 @@
+/* Update the CSS styles in your ProductList.css file */
+.befordetail{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+/* Search bar styles */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Product list styles */
+.product-list {
+  padding: 20px;
+}
+
+.product-items {
+  list-style: none;
+  padding: 0rem;
+  margin: -0.9rem 0.2rem;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px -50px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.product-photo {
+  flex: 0 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-photo img {
+  max-width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  flex: 1;
+  text-align: center;
+}
+
+/* Show/hide details button */
+.product-details button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* More photos */
+.morephotolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.more-photo {
+  flex-basis: calc(33.33% - 10px); /* Display 3 photos per row */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.more-photo img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Image modal styles */
+/* Add this CSS to your ProductList.css file */
+.image-modal {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}

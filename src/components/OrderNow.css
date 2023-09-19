@@ -1,0 +1,67 @@
+/* OrderNow.css */
+
+.order-now {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .order-now h2 {
+    color: #007bff;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .order-now p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .order-now ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-now li {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .order-now a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .order-now a:hover {
+    color: #0056b3;
+  }
+  
+  /* Add animation effects */
+  .order-now ul {
+    animation: fade-in-up 1s ease-in-out;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add a background color to the social media links on hover */
+  .order-now a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+  }
+  

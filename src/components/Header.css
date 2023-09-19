@@ -1,0 +1,36 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Set the position to fixed */
+    top: 0; /* Place the header at the top */
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    color: #ffc107;
+  }
+  

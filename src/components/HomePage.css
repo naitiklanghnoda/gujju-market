@@ -1,0 +1,44 @@
+/* Home.css */
+
+.home-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling for the carousel */
+.carousel-root {
+  .carousel .slider-wrapper {
+    .slider {
+      position: relative;
+    }
+
+    .slider-frame {
+      display: flex;
+    }
+  }
+
+  .carousel .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  }
+}
